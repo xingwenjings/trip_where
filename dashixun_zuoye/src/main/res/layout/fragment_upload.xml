@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.UploadFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upload"
+        android:max="100"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_margin="10dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_tv"
+        android:text="当前下载进度："
+        android:layout_below="@id/upload"
+        android:layout_margin="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_tv"
+        android:textColor="#23EA09"
+        android:layout_below="@id/progress_tv"
+        android:layout_centerHorizontal="true"
+        android:text="开始下载"/>
+
+</RelativeLayout>

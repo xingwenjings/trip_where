@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main4Activity">
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="100dip"
+        android:layout_height="0dp"
+        android:text="AAAAAAAAAA"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="100dip"
+        android:layout_height="0dip"
+        app:layout_constraintDimensionRatio="W,2:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonA"
+        app:layout_constraintRight_toRightOf="parent" />
+    <Button
+        android:id="@+id/buttonE"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:text="E"
+        app:layout_constraintTop_toBottomOf="@id/buttonB"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/buttonF" />
+
+    <Button
+        android:id="@+id/buttonF"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:text="F"
+        app:layout_constraintTop_toBottomOf="@id/buttonB"
+        app:layout_constraintLeft_toRightOf="@id/buttonE"
+        app:layout_constraintRight_toLeftOf="@id/buttonG" />
+
+    <Button
+        android:id="@+id/buttonG"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:text="G"
+        app:layout_constraintTop_toBottomOf="@id/buttonB"
+        app:layout_constraintLeft_toRightOf="@id/buttonF"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="buttonO,buttonP" />
+
+    <Button
+        android:id="@+id/buttonO"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:text="O"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonP"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:text="B"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
